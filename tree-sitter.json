@@ -1,0 +1,43 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "hydro",
+      "camelcase": "hydro",
+      "title": "Hydro",
+      "scope": "source.hydro",
+      "file-types": [
+        "hydro",
+        "hy"
+      ],
+      "injection-regex": "^hydro$",
+      "class-name": "TreeSitterHydro"
+    }
+  ],
+  "metadata": {
+    "version": "0.0.1",
+    "license": "MIT",
+    "description": "Parser for my programming language",
+    "authors": [
+      {
+        "name": "Carson Bates (carsonetb)",
+        "email": "me@carsonetb.com",
+        "url": "https://carsonetb.com"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/carsonetb/tree-sitter-hydro",
+      "funding": ""
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": false,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
