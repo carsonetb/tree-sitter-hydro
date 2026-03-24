@@ -21,7 +21,7 @@ module.exports = grammar({
     line_comment: $ => token(seq('//', /.*/)),
 
     keyword: $ => choice(
-      'fn', 'var', 'if', 'elif', 'else', 'for', 'in', 'return'
+      'fn', 'var', 'if', 'elif', 'else', 'for', 'in', 'return', 'class'
     ),
 
     boolean: $ => choice('true', 'false'),
